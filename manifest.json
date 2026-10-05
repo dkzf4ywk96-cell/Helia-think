@@ -1,7 +1,7 @@
 {
   "name": "HELIA THINK",
-  "short_name": "HELIA",
-  "description": "판단을 훈련하는 개인 학습 시스템",
+  "short_name": "HELIA THINK",
+  "description": "사건, 원인, 영향, 확인, 결론, 반증으로 판단을 훈련하는 개인 학습 앱",
   "lang": "ko-KR",
   "start_url": "./",
   "scope": "./",
@@ -10,8 +10,24 @@
   "background_color": "#030405",
   "theme_color": "#030405",
   "icons": [
-    {"src":"icon-180.png","sizes":"180x180","type":"image/png"},
-    {"src":"icon-192.png","sizes":"192x192","type":"image/png"},
-    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
-  ]
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "id": "./"
 }
