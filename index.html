@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#050709">
 <meta name="color-scheme" content="dark">
-<meta name="description" content="HELIA THINK — 사건, 원인, 영향, 확인, 결론, 반증으로 판단을 훈련하는 개인 학습 앱">
+<meta name="description" content="HELIA — 사건, 원인, 영향, 확인, 결론, 반증으로 판단을 훈련하는 개인 학습 앱">
 <meta name="format-detection" content="telephone=no">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="HELIA THINK">
-<title>HELIA THINK</title>
+<meta name="apple-mobile-web-app-title" content="HELIA">
+<title>HELIA</title>
 <style>
 :root{
   --bg:#030405;--surface:#090d11;--surface2:#0d1318;--surface3:#111820;--line:#1e2730;
@@ -30,10 +30,10 @@ button,input,textarea,select{font:inherit}button{color:inherit}.hidden{display:n
 .brand{font-size:17px;font-weight:560;letter-spacing:.065em}.top-icons{display:flex;gap:10px;align-items:center}
 .round{width:33px;height:33px;border-radius:50%;border:1px solid #232c34;background:rgba(12,16,20,.76);display:grid;place-items:center;padding:0}.round svg{width:17px;height:17px;stroke:#d8dde0}
 .wave{height:18px;display:flex;align-items:center;gap:2px}.wave i{display:block;width:2px;border-radius:2px;background:#d9dee1}.wave i:nth-child(1){height:7px}.wave i:nth-child(2){height:14px}.wave i:nth-child(3){height:18px}.wave i:nth-child(4){height:10px}.wave i:nth-child(5){height:5px}
-.home-hero{height:172px;padding:18px 4px 0;position:relative;overflow:hidden;margin:0 -15px;padding-left:19px;padding-right:19px}
-.home-hero:after{content:"";position:absolute;width:392px;height:126px;right:-76px;bottom:-67px;border-radius:50%;background:radial-gradient(ellipse at 44% 10%,rgba(255,255,255,.82) 0 1%,rgba(174,196,216,.38) 2%,rgba(65,98,129,.21) 9%,rgba(9,18,27,.97) 35%,#020304 64%);box-shadow:0 -6px 26px rgba(115,151,186,.11),0 -1px 0 rgba(218,230,239,.48)}
-.home-hero:before{content:"";position:absolute;right:-10px;bottom:-6px;width:250px;height:110px;background:radial-gradient(circle at 50% 80%,rgba(60,100,140,.16),transparent 66%);filter:blur(18px)}
-.hero-copy{position:relative;z-index:2}.hero-copy h1{font-size:27px;line-height:1.15;letter-spacing:-.038em;margin:4px 0 9px;font-weight:690}.hero-copy p{font-size:12px;color:#b7bec4;line-height:1.45;margin:0}.date{margin-top:20px;font-size:11px;color:#cfd3d6}
+.home-hero{height:172px;padding:18px 4px 0;position:relative;overflow:hidden;margin:0 -15px;padding-left:19px;padding-right:19px;background:linear-gradient(90deg,rgba(2,4,6,.94) 0%,rgba(2,4,6,.78) 36%,rgba(2,4,6,.18) 70%,rgba(2,4,6,.04) 100%),url("earth-hero.png") right 44% center/cover no-repeat}
+.home-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,4,6,.05),rgba(2,4,6,.02) 55%,rgba(2,4,6,.42));pointer-events:none}
+.home-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 70%,rgba(93,139,183,.10),transparent 42%);pointer-events:none}
+.hero-copy{position:relative;z-index:2}.hero-copy h1{font-size:25px;line-height:1.15;letter-spacing:-.038em;margin:4px 0 9px;font-weight:690}.hero-copy p{font-size:12px;color:#b7bec4;line-height:1.45;margin:0}.date{margin-top:20px;font-size:11px;color:#cfd3d6}
 .panel{background:linear-gradient(150deg,rgba(15,21,27,.98),rgba(8,12,16,.99));border:1px solid #1f2932;border-radius:18px;box-shadow:var(--shadow)}
 .today-panel{padding:13px;margin-top:0}.panel-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}.panel-head b{font-size:14px;font-weight:680}.panel-head small{display:block;color:#727b83;font-size:10px;margin-top:3px}.chev{font-size:22px;color:#9aa3a9}
 .training{display:grid;grid-template-columns:1fr 1fr;gap:8px}.train{height:78px;border:1px solid #232d36;border-radius:15px;background:linear-gradient(150deg,#111820,#0b1015);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}.train svg{width:22px;height:22px;stroke:#e9edef;stroke-width:1.55}.train span{font-size:12px;font-weight:620}.train:active{transform:scale(.985)}
@@ -60,14 +60,14 @@ button,input,textarea,select{font:inherit}button{color:inherit}.hidden{display:n
   .home-hero{height:166px}
   .tabbar{height:calc(60px + env(safe-area-inset-bottom));}
 }
-@media(min-width:700px){body:before{content:"HELIA THINK";position:fixed;top:30px;left:38px;color:#252b30;letter-spacing:.24em;font-size:11px}.app{border-left:1px solid #141a1f;border-right:1px solid #141a1f}}
+@media(min-width:700px){body:before{content:"HELIA";position:fixed;top:30px;left:38px;color:#252b30;letter-spacing:.24em;font-size:11px}.app{border-left:1px solid #141a1f;border-right:1px solid #141a1f}}
 </style>
 </head>
 <body>
 <div class="app">
   <section id="home" class="page active">
-    <div class="topbar"><div class="brand">HELIA THINK</div><div class="top-icons"><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><button class="round" onclick="showPage('settings')" aria-label="설정"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="1"/><circle cx="6" cy="12" r="1"/><circle cx="18" cy="12" r="1"/></svg></button></div></div>
-    <div class="home-hero"><div class="hero-copy"><h1>환,<br>오늘은 무엇을 할까?</h1><p>“생각의 깊이가<br>투자의 차이를 만든다.”</p><div class="date" id="dateLabel"></div></div></div>
+    <div class="topbar"><div class="brand">HELIA</div><div class="top-icons"><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><button class="round" onclick="showPage('settings')" aria-label="설정"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="1"/><circle cx="6" cy="12" r="1"/><circle cx="18" cy="12" r="1"/></svg></button></div></div>
+    <div class="home-hero"><div class="hero-copy"><h1>오늘의 인사이트</h1><p>“생각의 깊이가<br>투자의 차이를 만든다.”</p><div class="date" id="dateLabel"></div></div></div>
     <div class="panel today-panel"><div class="panel-head"><div><b>오늘의 훈련</b><small>1개의 훈련을 선택해서 시작하세요.</small></div><span class="chev">›</span></div><div class="training">
       <button class="train" onclick="startArticle()"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v5h5"/><path d="M10 12h6M10 16h6"/></svg><span>기사 분석</span></button>
       <button class="train" onclick="startSimple('company')"><svg viewBox="0 0 24 24" fill="none"><path d="M5 20V9m5 11V4m5 16v-7m5 7H3"/></svg><span>기업 분석</span></button>
@@ -116,7 +116,7 @@ button,input,textarea,select{font:inherit}button{color:inherit}.hidden{display:n
     <div class="topbar"><div class="brand">설정</div><span></span></div>
     <div class="group-title">데이터 관리</div><div class="settings-group"><div class="setting-row" onclick="exportData()"><span>모든 데이터 백업 (파일로 저장)</span><span class="right">›</span></div><label class="setting-row"><span>데이터 불러오기</span><span class="right">›</span><input type="file" hidden accept="application/json" onchange="importData(event)"></label><div class="setting-row danger" onclick="clearAll()"><span>모든 데이터 삭제</span><span>›</span></div></div>
     <div class="group-title">화면 설정</div><div class="settings-group"><div class="setting-row"><span>테마</span><span class="right">다크</span></div><div class="setting-row"><span>폰트</span><span class="right">iPhone 기본</span></div></div>
-    <div class="group-title">앱 정보</div><div class="settings-group"><div class="setting-row"><span><b>HELIA THINK</b><br><small style="color:#7d878f">세상을 보는 힘을 키우는<br>나만의 사고 훈련 앱</small></span><span class="right">3.2.0</span></div><div class="setting-row" onclick="openSheet('guideSheet')"><span>사용 가이드</span><span>›</span></div><div class="setting-row" onclick="openSheet('feedbackSheet')"><span>피드백 보내기</span><span>›</span></div></div>
+    <div class="group-title">앱 정보</div><div class="settings-group"><div class="setting-row"><span><b>HELIA</b><br><small style="color:#7d878f">세상을 보는 힘을 키우는<br>나만의 사고 훈련 앱</small></span><span class="right">3.2.2</span></div><div class="setting-row" onclick="openSheet('guideSheet')"><span>사용 가이드</span><span>›</span></div><div class="setting-row" onclick="openSheet('feedbackSheet')"><span>피드백 보내기</span><span>›</span></div></div>
   </section>
 </div>
 
@@ -130,7 +130,7 @@ button,input,textarea,select{font:inherit}button{color:inherit}.hidden{display:n
 <div class="sheet" id="companySheet"><div class="sheet-box"><div class="handle"></div><h2>기업 분석</h2><p>사업, 숫자, 리스크를 한 화면에 정리해.</p><div class="field"><label>기업명</label><input class="input" id="cName"></div><div class="field"><label>핵심 투자 논리</label><textarea id="cThesis"></textarea></div><div class="field"><label>실적 / 밸류에이션</label><textarea id="cProfit"></textarea></div><div class="field"><label>경쟁력 / 촉매</label><textarea id="cEdge"></textarea></div><div class="field"><label>리스크 / 무효화 조건</label><textarea id="cRisk"></textarea></div><div class="field"><label>내 결론</label><textarea id="cConclusion"></textarea></div><button class="btn primary full" onclick="saveSimple('company')">기업 분석 저장</button><button class="btn full" style="margin-top:8px" onclick="closeSheets()">닫기</button></div></div>
 <div class="sheet" id="conceptSheet"><div class="sheet-box"><div class="handle"></div><h2>개념 정리</h2><p>외우지 말고 작동 원리까지 설명해.</p><div class="field"><label>개념</label><input class="input" id="kName"></div><div class="field"><label>한 줄 정의</label><textarea id="kOne"></textarea></div><div class="field"><label>작동 원리</label><textarea id="kHow"></textarea></div><div class="field"><label>실제 사례</label><textarea id="kCase"></textarea></div><div class="field"><label>반례 / 예외</label><textarea id="kCounter"></textarea></div><button class="btn primary full" onclick="saveSimple('concept')">개념 저장</button><button class="btn full" style="margin-top:8px" onclick="closeSheets()">닫기</button></div></div>
 <div class="sheet" id="mistakeSheet"><div class="sheet-box"><div class="handle"></div><h2>오답 기록</h2><p>틀린 문제보다 틀린 이유를 남겨.</p><div class="field"><label>문제 / 상황</label><textarea id="mQ"></textarea></div><div class="field"><label>내 답</label><textarea id="mMy"></textarea></div><div class="field"><label>정답 / 올바른 판단</label><textarea id="mAnswer"></textarea></div><div class="field"><label>왜 틀렸나</label><textarea id="mWhy"></textarea></div><div class="field"><label>다음에 확인할 것</label><textarea id="mFix"></textarea></div><button class="btn primary full" onclick="saveSimple('mistake')">오답 저장</button><button class="btn full" style="margin-top:8px" onclick="closeSheets()">닫기</button></div></div>
-<div class="sheet" id="guideSheet"><div class="sheet-box"><div class="handle"></div><h2>HELIA THINK 사용 가이드</h2><p>정답을 받기보다 판단 과정을 남기는 데 집중해.</p><div class="tip"><b>1. 먼저 생각하기</b>기사나 주제를 읽고 AI를 보기 전에 내 판단부터 적어.</div><div class="tip"><b>2. 여섯 단계로 구조화</b>사건 → 원인 → 영향 → 확인 → 결론 → 반증 순서로 연결해.</div><div class="tip"><b>3. 헬리아 점검</b>약한 고리, 확인할 숫자, 반대 가설을 보고 한 번 더 수정해.</div><div class="tip"><b>4. 복기하기</b>며칠 뒤 실제 결과와 당시 판단을 비교해서 틀린 이유를 남겨.</div><button class="btn primary full" onclick="closeSheets()">확인</button></div></div>
+<div class="sheet" id="guideSheet"><div class="sheet-box"><div class="handle"></div><h2>HELIA 사용 가이드</h2><p>정답을 받기보다 판단 과정을 남기는 데 집중해.</p><div class="tip"><b>1. 먼저 생각하기</b>기사나 주제를 읽고 AI를 보기 전에 내 판단부터 적어.</div><div class="tip"><b>2. 여섯 단계로 구조화</b>사건 → 원인 → 영향 → 확인 → 결론 → 반증 순서로 연결해.</div><div class="tip"><b>3. 헬리아 점검</b>약한 고리, 확인할 숫자, 반대 가설을 보고 한 번 더 수정해.</div><div class="tip"><b>4. 복기하기</b>며칠 뒤 실제 결과와 당시 판단을 비교해서 틀린 이유를 남겨.</div><button class="btn primary full" onclick="closeSheets()">확인</button></div></div>
 <div class="sheet" id="feedbackSheet"><div class="sheet-box"><div class="handle"></div><h2>피드백</h2><p>불편한 화면이나 기능이 있으면 캡처와 함께 헬리아 대화에 보내줘.</p><div class="tip"><b>좋은 피드백 예시</b>“기사 분석 3단계에서 입력창이 너무 길어.”<br>“복기 화면에서 지난 판단과 실제 결과를 나란히 보고 싶어.”</div><button class="btn primary full" onclick="closeSheets();toast('피드백은 헬리아 대화에서 이어가면 돼.')">확인</button></div></div>
 <div class="sheet" id="recordMenuSheet"><div class="sheet-box"><div class="handle"></div><h2>기록 관리</h2><p>이 기록을 수정하거나 삭제할 수 있어.</p><button class="btn primary full" onclick="editCurrentRecord()">수정하기</button><button class="btn danger full" style="margin-top:8px" onclick="confirmDeleteCurrent()">삭제하기</button><button class="btn full" style="margin-top:8px" onclick="closeSheets()">취소</button></div></div>
 <div class="sheet" id="deleteRecordSheet"><div class="sheet-box"><div class="handle"></div><h2>기록을 삭제할까?</h2><p>삭제한 기록은 되돌릴 수 없어.</p><button class="btn danger full" onclick="deleteCurrentRecord()">이 기록 삭제</button><button class="btn full" style="margin-top:8px" onclick="closeSheets()">취소</button></div></div>
@@ -196,7 +196,7 @@ function renderStats(){
 function renderReview(){const due=state.records.map((r,i)=>({r,i})).find(x=>x.r.reviewDate&&x.r.reviewDate<=localDate())||state.records.map((r,i)=>({r,i}))[0];if(!due){$('reviewContent').innerHTML='<div class="panel empty">복기할 기록이 아직 없어요.</div>';return}const r=due.r;$('reviewContent').innerHTML=`<span class="review-badge">D-3</span><h1>이 분석을 복기할 시간이에요.</h1><p>당시의 판단과 실제 결과를 비교해보세요.<br>어떤 점이 맞았고, 어떤 점이 틀렸나요?</p><div class="review-topic"><span class="rec-thumb"></span><div><b>${esc(r.title)}</b><small>${esc(tagClass(r.type))} · ${esc(r.date)}</small></div></div><div class="review-box"><label>당시의 나의 판단</label><div style="font-size:11px;color:#c5cbd0;line-height:1.5">${esc(summary(r)||'당시 판단이 기록되어 있지 않아요.')}</div></div><div class="review-box"><label>실제 결과</label><textarea id="reviewResult" placeholder="실제 어떤 결과가 나왔나요? 뉴스나 지표를 확인하고 정리해보세요."></textarea></div><div class="review-box"><label>복기하며 느낀 점</label><textarea id="reviewNote" placeholder="어떤 점이 맞았고, 어떤 점이 틀렸나요?"></textarea></div><button class="btn primary full" onclick="markReviewed(${due.i})">✓ 복기 완료</button>`}
 function markReviewed(i){const r=state.records[i];r.reviewHistory=r.reviewHistory||[];r.reviewHistory.unshift({date:localDate(),result:$('reviewResult')?.value.trim()||'',note:$('reviewNote')?.value.trim()||''});r.lastReviewed=localDate();r.reviewDate=addDays(localDate(),7);save();renderReview();toast('복기를 저장했어.')}
 function exportData(){const b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),a=document.createElement('a'),url=URL.createObjectURL(b);a.href=url;a.download='helia-think-'+localDate()+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);toast('백업 파일을 준비했어.')}
-function importData(e){const f=e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{try{const parsed=JSON.parse(rd.result);if(!parsed||!Array.isArray(parsed.records))throw new Error('invalid');state=parsed;state.records=state.records||[];save();renderAll();toast('데이터를 불러왔어.')}catch{toast('올바른 HELIA THINK 백업 파일이 아니야.')}finally{e.target.value=''}};rd.readAsText(f)}
+function importData(e){const f=e.target.files[0];if(!f)return;const rd=new FileReader();rd.onload=()=>{try{const parsed=JSON.parse(rd.result);if(!parsed||!Array.isArray(parsed.records))throw new Error('invalid');state=parsed;state.records=state.records||[];save();renderAll();toast('데이터를 불러왔어.')}catch{toast('올바른 HELIA 백업 파일이 아니야.')}finally{e.target.value=''}};rd.readAsText(f)}
 function clearAll(){if(confirm('모든 기록을 삭제할까요? 이 작업은 되돌릴 수 없어요.')){state={records:[],streak:0};save();renderAll();showPage('home');toast('모든 기록을 삭제했어.')}}
 function renderAll(){renderHome();renderRecords();renderStats();renderReview()}renderAll();
 </script>

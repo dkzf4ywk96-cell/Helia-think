@@ -1,5 +1,5 @@
-const CACHE = 'helia-think-final-3-2-1-record-fix';
-const CORE = ['./','./index.html','./manifest.json','./icon-180.png','./icon-192.png','./icon-512.png'];
+const CACHE = 'helia-final-3-2-2';
+const CORE = ['./','./index.html','./manifest.json','./icon-180.png','./icon-192.png','./icon-512.png','./earth-hero.png'];
 self.addEventListener('install', e => { self.skipWaiting(); e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE))); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
